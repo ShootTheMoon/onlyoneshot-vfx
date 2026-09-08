@@ -31,6 +31,9 @@ Script 11 · SpawnLocation 9 · RemoteEvent 5 · SoundGroup 3 · Animation 2 · 
 
 **우리는 창고를 열어본 적이 없다.** 네 첫 임무는 창고 문이 실제로 열리는지 확인하는 것이다 → `09_PROBE.md`.
 
+**작업 방법은 별도 리포에 있다** — [`overdare-vfx-guide`](https://github.com/ShootTheMoon/overdare-vfx-guide).
+이 리포는 *무엇이 있는가*(API 표면·이 게임의 지형과 UI)를 다루고, 저쪽이 *어떻게 하는가*(작업 루프·도구 사용법·굽기·크래프트·체크리스트)를 다룬다. 겹치지 않게 나눠놨으니 둘 다 봐라.
+
 ---
 
 ## 1. 읽을 순서
