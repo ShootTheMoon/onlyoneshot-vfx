@@ -46,15 +46,24 @@ Script 11 · SpawnLocation 9 · RemoteEvent 5 · SoundGroup 3 · Animation 2 · 
 | 4 | [06_TERRAIN.md](06_TERRAIN.md) · [07_UI_INVENTORY.md](07_UI_INVENTORY.md) | 실제 지형/UI에 붙일 자리. **실명과 좌표가 들어 있다** |
 | 5 | [03_ROUTES_WORLD.md](03_ROUTES_WORLD.md) · [04_ROUTES_UI.md](04_ROUTES_UI.md) | 결정 트리 — 어떤 이펙트를 어느 경로로 |
 | 6 | **[09_PROBE.md](09_PROBE.md)** | **네 1번 태스크** |
+| 7 | [11_ROUTES_WATER_AND_CUT.md](11_ROUTES_WATER_AND_CUT.md) | 물 효과·베기 효과 라우팅 판정. **베기는 진짜 절단이 안 된다.** 칼이 이미 나무를 맞히고 있는 공짜 부착점 |
 | 참고 | [05_PRESET_MAP.md](05_PRESET_MAP.md) · [10_OPEN_QUESTIONS.md](10_OPEN_QUESTIONS.md) | 프리셋 카탈로그 · 미해결 |
 
 ---
 
 ## 2. 권위 있는 소스 — 이건 읽고, 저건 읽지 마라
 
+> ## ⚠ 2026-11-09 — 이 절은 더 유효하지 않다
+>
+> 런타임이 **v0.11.0** 으로 올라갔고(`runtime-current.json`, 갱신 2026-09-18) **`overdare-types.d.lua` 가 사라졌다.** `runtime-v0.11.0\assets\lua\` 는 빈 디렉터리이고, `.overdare` 전체 검색에서 그 파일이 0건이다. `runtime-v0.10.0\` 디렉터리도 없다.
+>
+> **아래 "읽어라" 경로는 이 PC 에 존재하지 않는다.** `01_ENGINE_TRUTH.md` 의 줄번호 인용도 원본 대조가 안 된다. 다만 **`vfx-recipe` 카탈로그는 v0.11.0 사본과 바이트 단위로 동일하다**(146행 / 39소스) — `05_PRESET_MAP.md` 는 그대로 유효하다.
+>
+> 자세한 것과 조치는 [Q-13](10_OPEN_QUESTIONS.md#q-13--런타임이-v0110이고-타입파일이-사라졌다--이-리포의-확인-창구가-막혔다).
+
 | | 경로 |
 |---|---|
-| ✅ **읽어라** | `%USERPROFILE%\.overdare\updates\runtime-v0.10.0\assets\lua\overdare-types.d.lua` (85 KB, 3093줄) |
+| ✅ **읽어라** | `%USERPROFILE%\.overdare\updates\runtime-v0.10.0\assets\lua\overdare-types.d.lua` (85 KB, 3093줄) — **2026-11-09 현재 없음** |
 | ❌ **읽지 마라** | `%USERPROFILE%\.overdare\updates\runtime\assets\lua\overdare-types.d.lua` — **v0.5.7 낡은 사본이다** |
 
 `runtime-current.json`이 `{"version":"0.10.0","dir":"runtime-v0.10.0"}`로 활성 런타임을 가리킨다.
